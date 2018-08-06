@@ -10,18 +10,15 @@
 
 // ++ Write YOUR CODE Below
 
-function wordMatChInArray(string, array) {
-	var input = 0;
+function wordMatchInArray(string, array) {
+
 	for (var i = 0; i < array.length; i++){
-		if (string === array[i]) {
-			input += 1;
-		} 
-	}
-	if (input > 0) {
-		return true;
-	} else {
-		return false;		
-	}
+		var match = array[i];
+
+		if (string === match){
+			return true;
+		}
+	} return false;
 }
 
 
